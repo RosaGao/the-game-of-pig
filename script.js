@@ -5,6 +5,7 @@ const playerTurn = document.getElementById("result");
 holdBtn.addEventListener("click", hold);
 rollBtn.addEventListener("click", roll);
 
+
 let holdValue = {"p1": 0, "p2": 0};
 let score = {"p1": 0, "p2": 0};
 let player = "p1";
