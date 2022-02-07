@@ -1,5 +1,8 @@
 A simple web application implementing the game of Pig. 
 
+The game can be found here:
+https://cs280spring-classroom.github.io/the-game-of-pig-RosaGao/
+
 Built with JavaScript, CSS, and HTML.
 
 The game of Pig is a simple dice game where two players race to reach 100 points. On each turn, the current player repeatedly rolls a die until a "1" is rolled or the player decides to "hold":
