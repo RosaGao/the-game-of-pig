@@ -1,13 +1,13 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=6800456&assignment_repo_type=AssignmentRepo)
-# The Game of Pig!
+A simple web application implementing the game of Pig. 
 
-This repository contains a homework submission.
+Built with JavaScript, CSS, and HTML.
 
-```text
-JHED=ygao112
-GITHUB_USERNAME=RosaGao
-GITHUB_REPO=https://github.com/cs280spring-classroom/the-game-of-pig-RosaGao
-GITHUB_PAGE=https://cs280spring-classroom.github.io/the-game-of-pig-RosaGao/
-```
+The game of Pig is a simple dice game where two players race to reach 100 points. On each turn, the current player repeatedly rolls a die until a "1" is rolled or the player decides to "hold":
 
-Please refer to the description of Homework-1, Full-Stack JavaScript (Spring 2022) for details.
+    1. If the player rolls a 1, they score nothing, and it becomes the next player's turn.
+    2. If the player rolls any other number, it is added to their turn total, and the player's turn continues.
+    3. If a player chooses to "hold," their turn total is added to their score, and it becomes the next player's turn.
+
+The first player to score 100 or more points wins.
+
+This game is part of a family of games described by Reiner Knizia as "jeopardy dice games" because the main challenge is "whether or not to jeopardize previous gains by rolling for potentially greater gains."
