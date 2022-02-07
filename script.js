@@ -5,30 +5,29 @@ const playerTurn = document.getElementById("result");
 holdBtn.addEventListener("click", hold);
 rollBtn.addEventListener("click", roll);
 
-
-let holdValue = {"p1": 0, "p2": 0};
-let score = {"p1": 0, "p2": 0};
+const holdValue = {"p1": 0, "p2": 0};
+const score = {"p1": 0, "p2": 0};
 let player = "p1";
 
 // helper function for displaying total score of a player
 function display_score (playerScore, player) {
-  document.getElementById(/*"p1-score"*/ player + "-score").style.width = playerScore + "%";
+  document.getElementById(player + "-score").style.width = playerScore + "%";
   if (playerScore !== 100) {
-    document.getElementById(/*"p1-score"*/ player + "-score").setAttribute("aria-valuenow", playerScore);
-    document.getElementById(/*"p1-score"*/ player + "-score").innerText = playerScore;
+    document.getElementById(player + "-score").setAttribute("aria-valuenow", playerScore);
+    document.getElementById(player + "-score").innerText = playerScore;
   }
   else {
-    document.getElementById(/*"p1-score"*/ player + "-score").setAttribute("aria-valuenow", playerScore);
-    document.getElementById(/*"p1-score"*/ player + "-score").classList.add("bg-success");
-    document.getElementById(/*"p1-score"*/ player + "-score").innerText = playerScore + "🎉";
+    document.getElementById(player + "-score").setAttribute("aria-valuenow", playerScore);
+    document.getElementById(player + "-score").classList.add("bg-success");
+    document.getElementById(player + "-score").innerText = playerScore + "🎉";
   }
 }
 
 // helper function for displaying the turn total of a player
 function display_holdValue (playerHoldValue, player) {
-  document.getElementById(/*"p1-hold"*/ player + "-hold").style.width = playerHoldValue + "%";
-  document.getElementById(/*"p1-hold"*/ player + "-hold").setAttribute("aria-valuenow", playerHoldValue);
-  document.getElementById(/*"p1-hold"*/ player + "-hold").innerText = playerHoldValue;
+  document.getElementById(player + "-hold").style.width = playerHoldValue + "%";
+  document.getElementById(player + "-hold").setAttribute("aria-valuenow", playerHoldValue);
+  document.getElementById(player + "-hold").innerText = playerHoldValue;
 }
 
 // helper function for switching turns
